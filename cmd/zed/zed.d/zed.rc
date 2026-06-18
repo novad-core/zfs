@@ -197,3 +197,10 @@ ZED_SYSLOG_SUBCLASS_EXCLUDE="history_event"
 # Gotify application associated with ZED_GOTIFY_APPTOKEN.
 # Value is an integer 0 and up.
 #ZED_GOTIFY_PRIORITY=""
+
+##
+# Audit log for pool events (pool-audit.sh)
+# Path to the structured JSON audit log file.
+# Set ZFS_AUDIT_ENABLED=0 to disable audit logging.
+#ZFS_AUDIT_LOG="/var/log/zfs/audit.log"
+#ZFS_AUDIT_ENABLED=1
