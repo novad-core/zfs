@@ -37,6 +37,7 @@ typedef struct zfs_dbgmsg {
 static procfs_list_t zfs_dbgmsgs;
 static uint_t zfs_dbgmsg_size = 0;
 static uint_t zfs_dbgmsg_maxsize = 4<<20; /* 4MB */
+static uint_t zfs_dbgmsg_maxage = 0; /* unlimited by default */
 
 /*
  * Internal ZFS debug messages are enabled by default.
@@ -217,3 +218,7 @@ MODULE_PARM_DESC(zfs_dbgmsg_enable, "Enable ZFS debug message log");
 
 module_param(zfs_dbgmsg_maxsize, uint, 0644);
 MODULE_PARM_DESC(zfs_dbgmsg_maxsize, "Maximum ZFS debug log size");
+
+module_param(zfs_dbgmsg_maxage, uint, 0644);
+MODULE_PARM_DESC(zfs_dbgmsg_maxage,
+    "Maximum age of ZFS debug log entries in seconds (0 = unlimited)");
