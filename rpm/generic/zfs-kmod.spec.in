@@ -1,7 +1,7 @@
 %define module  @PACKAGE@
 
 %if !%{defined ksrc}
-%if 0%{?rhel}%{?fedora}%{?openEuler}
+%if 0%{?rhel}%{?fedora}%{?openEuler}%{?astra_version}%{?redos_version}
 %define ksrc    ${kernel_version##*___}
 %else
 %define ksrc    "$( \
@@ -16,7 +16,7 @@
 %endif
 
 %if !%{defined kobj}
-%if 0%{?rhel}%{?fedora}%{?openEuler}
+%if 0%{?rhel}%{?fedora}%{?openEuler}%{?astra_version}%{?redos_version}
 %define kobj    ${kernel_version##*___}
 %else
 %define kobj    "$( \
@@ -52,7 +52,7 @@ URL:            https://github.com/openzfs/zfs
 Source0:        %{module}-%{version}.tar.gz
 Source10:       kmodtool
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id} -u -n)
-%if 0%{?rhel}%{?fedora}%{?openEuler}
+%if 0%{?rhel}%{?fedora}%{?openEuler}%{?astra_version}%{?redos_version}
 BuildRequires:  gcc, make
 BuildRequires:  elfutils-libelf-devel
 %endif
