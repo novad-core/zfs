@@ -26,9 +26,11 @@
 !scripts
 !tests
 !udev
+!po
 
 !.github/**
 !cmd/**
+!po/**
 !config/**
 !contrib/**
 !etc/**
@@ -61,7 +63,6 @@
 !README.ru.md
 !RELEASES.md
 !CHANGELOG.ru.md
-!PASSPORT.md
 !SECURITY.ru.md
 !TEST
 !zfs.release.in

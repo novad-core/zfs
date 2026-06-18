@@ -1,0 +1,159 @@
+# Russian translation for ZFS utilities
+# Copyright (C) 2024 novad-core
+# This file is distributed under the same license as the zfs package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: zfs 2.3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 00:00+0300\n"
+"PO-Revision-Date: 2024-06-01 12:00+0300\n"
+"Last-Translator: novad-core <info@novad-core.ru>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "missing pool name argument"
+msgstr "отсутствует аргумент с именем пула"
+
+msgid "missing dataset argument"
+msgstr "отсутствует аргумент с именем набора данных"
+
+msgid "missing property argument"
+msgstr "отсутствует аргумент свойства"
+
+msgid "missing value argument"
+msgstr "отсутствует аргумент значения"
+
+msgid "too many arguments"
+msgstr "слишком много аргументов"
+
+msgid "invalid option"
+msgstr "недопустимый параметр"
+
+msgid "invalid property"
+msgstr "недопустимое свойство"
+
+msgid "invalid value"
+msgstr "недопустимое значение"
+
+msgid "cannot open '%s': no such pool"
+msgstr "не удалось открыть '%s': пул не существует"
+
+msgid "cannot open '%s': no such dataset"
+msgstr "не удалось открыть '%s': набор данных не существует"
+
+msgid "cannot create '%s': pool must be upgraded to set this property"
+msgstr "не удалось создать '%s': необходимо обновить пул для установки этого свойства"
+
+msgid "cannot set property for '%s': read-only dataset"
+msgstr "не удалось установить свойство для '%s': набор данных доступен только для чтения"
+
+msgid "cannot destroy '%s': dataset is busy"
+msgstr "не удалось удалить '%s': набор данных занят"
+
+msgid "cannot destroy '%s': filesystem has children"
+msgstr "не удалось удалить '%s': файловая система содержит дочерние объекты"
+
+msgid "cannot mount '%s': mountpoint is busy"
+msgstr "не удалось смонтировать '%s': точка монтирования занята"
+
+msgid "cannot mount '%s': permission denied"
+msgstr "не удалось смонтировать '%s': доступ запрещён"
+
+msgid "cannot unmount '%s': not currently mounted"
+msgstr "не удалось размонтировать '%s': файловая система не смонтирована"
+
+msgid "cannot unmount '%s': device is busy"
+msgstr "не удалось размонтировать '%s': устройство занято"
+
+msgid "cannot snapshot '%s': tag already exists"
+msgstr "не удалось создать снапшот '%s': метка уже существует"
+
+msgid "cannot rollback '%s': no more snapshots"
+msgstr "не удалось выполнить откат '%s': снапшоты отсутствуют"
+
+msgid "cannot rollback '%s': target is not most recent snapshot"
+msgstr "не удалось выполнить откат '%s': цель не является последним снапшотом"
+
+msgid "cannot receive: failed to read from stream"
+msgstr "не удалось получить данные: ошибка чтения потока"
+
+msgid "cannot receive: stream is truncated"
+msgstr "не удалось получить данные: поток обрезан"
+
+msgid "cannot receive: invalid stream"
+msgstr "не удалось получить данные: недопустимый поток"
+
+msgid "pool '%s' is unavailable"
+msgstr "пул '%s' недоступен"
+
+msgid "pool '%s' is degraded"
+msgstr "пул '%s' деградирован"
+
+msgid "pool '%s' is suspended"
+msgstr "пул '%s' приостановлен"
+
+msgid "pool '%s' is faulted"
+msgstr "пул '%s' неисправен"
+
+msgid "pool is healthy"
+msgstr "пул в норме"
+
+msgid "all pools are healthy"
+msgstr "все пулы в норме"
+
+msgid "no pools available"
+msgstr "доступных пулов нет"
+
+msgid "cannot create '%s': the pool is read-only"
+msgstr "не удалось создать '%s': пул доступен только для чтения"
+
+msgid "cannot create '%s': dataset already exists"
+msgstr "не удалось создать '%s': набор данных уже существует"
+
+msgid "cannot rename '%s' to '%s': datasets must be within same pool"
+msgstr "не удалось переименовать '%s' в '%s': наборы данных должны находиться в одном пуле"
+
+msgid "key successfully loaded"
+msgstr "ключ успешно загружен"
+
+msgid "key successfully unloaded"
+msgstr "ключ успешно выгружен"
+
+msgid "cannot load key for '%s': key already loaded"
+msgstr "не удалось загрузить ключ для '%s': ключ уже загружен"
+
+msgid "cannot unload key for '%s': dataset is mounted"
+msgstr "не удалось выгрузить ключ для '%s': набор данных смонтирован"
+
+msgid "Enter passphrase:"
+msgstr "Введите парольную фразу:"
+
+msgid "Re-enter passphrase:"
+msgstr "Повторите парольную фразу:"
+
+msgid "Passphrases do not match"
+msgstr "Парольные фразы не совпадают"
+
+msgid "encryption root's key is not loaded"
+msgstr "ключ корня шифрования не загружен"
+
+msgid "scrub in progress"
+msgstr "выполняется проверка целостности"
+
+msgid "scrub paused"
+msgstr "проверка целостности приостановлена"
+
+msgid "resilver in progress"
+msgstr "выполняется восстановление (resilver)"
+
+msgid "errors: %llu data errors, use '-v' for a list"
+msgstr "ошибки: %llu ошибок данных, используйте '-v' для списка"
+
+msgid "no errors"
+msgstr "ошибок нет"
