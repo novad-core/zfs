@@ -157,3 +157,69 @@ msgstr "ошибки: %llu ошибок данных, используйте '-v
 
 msgid "no errors"
 msgstr "ошибок нет"
+
+msgid "cannot set property: property is readonly"
+msgstr "не удалось установить свойство: свойство доступно только для чтения"
+
+msgid "cannot inherit: property does not apply to datasets of this type"
+msgstr "не удалось унаследовать: свойство не применимо к наборам данных этого типа"
+
+msgid "cannot clone: target pool must be specified"
+msgstr "не удалось клонировать: необходимо указать целевой пул"
+
+msgid "cannot send: dataset does not exist"
+msgstr "не удалось отправить: набор данных не существует"
+
+msgid "cannot send: snapshot is the same as the origin"
+msgstr "не удалось отправить: снапшот совпадает с исходным"
+
+msgid "cannot receive: destination '%s' already exists"
+msgstr "не удалось получить: получатель '%s' уже существует"
+
+msgid "cannot receive: destination '%s' does not exist"
+msgstr "не удалось получить: получатель '%s' не существует"
+
+msgid "pool successfully exported"
+msgstr "пул успешно экспортирован"
+
+msgid "pool successfully imported"
+msgstr "пул успешно импортирован"
+
+msgid "cannot import '%s': pool already exists"
+msgstr "не удалось импортировать '%s': пул уже существует"
+
+msgid "cannot import: no pools found"
+msgstr "не удалось импортировать: пулы не найдены"
+
+msgid "cannot add to '%s': pool must be upgraded to add these vdevs"
+msgstr "не удалось добавить в '%s': необходимо обновить пул для добавления этих устройств"
+
+msgid "cannot online %s: no such device in pool"
+msgstr "не удалось перевести %s в режим онлайн: устройство не найдено в пуле"
+
+msgid "cannot offline %s: no such device in pool"
+msgstr "не удалось перевести %s в режим офлайн: устройство не найдено в пуле"
+
+msgid "cannot replace %s with %s: devices have different sector alignment"
+msgstr "не удалось заменить %s на %s: устройства имеют разное выравнивание секторов"
+
+msgid "vdev is not in a replaceable state"
+msgstr "устройство не находится в состоянии, допускающем замену"
+
+msgid "invalid replication level"
+msgstr "недопустимый уровень репликации"
+
+msgid "pool version is too old"
+msgstr "версия пула устарела"
+
+msgid "pool version is too new"
+msgstr "версия пула слишком новая"
+
+msgid "insufficient replicas"
+msgstr "недостаточно реплик"
+
+msgid "pool has active shared spare device"
+msgstr "пул содержит активное общее резервное устройство"
+
+msgid "use '-f' to override the following errors:"
+msgstr "используйте '-f' для игнорирования следующих ошибок:"
