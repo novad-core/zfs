@@ -82,7 +82,7 @@
 
 libzfs_handle_t *g_zfs;
 
-static int mount_tp_nthr = 512;  /* tpool threads for multi-threaded mounting */
+static int mount_tp_nthr = 1024;  /* tpool threads for multi-threaded mounting */
 
 static int zpool_do_create(int, char **);
 static int zpool_do_destroy(int, char **);
