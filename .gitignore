@@ -58,7 +58,11 @@
 !NEWS
 !NOTICE
 !README.md
+!README.ru.md
 !RELEASES.md
+!CHANGELOG.ru.md
+!PASSPORT.md
+!SECURITY.ru.md
 !TEST
 !zfs.release.in
 
