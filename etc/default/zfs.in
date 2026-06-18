@@ -109,3 +109,10 @@ ZFS_DKMS_DISABLE_STRIP='no'
 # Optional arguments for the ZFS Event Daemon (ZED).
 # See zed(8) for more information on available options.
 #ZED_ARGS="-M"
+
+# Path to the ZFS pool event audit log (used by pool-audit.sh ZEDLET).
+# Set to empty string to disable audit logging.
+#ZFS_AUDIT_LOG="/var/log/zfs/audit.log"
+
+# Interval in seconds for periodic pool health checks (0 = disabled).
+#ZFS_HEALTH_CHECK_INTERVAL=300
