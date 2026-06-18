@@ -81,6 +81,7 @@ static boolean_t zvol_use_blk_mq = B_FALSE;
  * read and write tests to a zvol in an NVMe pool (with 16 CPUs).
  */
 static unsigned int zvol_blk_mq_blocks_per_thread = 8;
+static unsigned int zvol_io_stall_warn_ms = 0;
 
 static unsigned int zvol_num_taskqs = 0;
 
@@ -1945,6 +1946,10 @@ MODULE_PARM_DESC(zvol_use_blk_mq, "Use the blk-mq API for zvols");
 module_param(zvol_blk_mq_blocks_per_thread, uint, 0644);
 MODULE_PARM_DESC(zvol_blk_mq_blocks_per_thread,
 	"Process volblocksize blocks per thread");
+
+module_param(zvol_io_stall_warn_ms, uint, 0644);
+MODULE_PARM_DESC(zvol_io_stall_warn_ms,
+	"Log a warning when zvol I/O stalls exceed this threshold (ms, 0=disabled)");
 
 #ifndef HAVE_BLKDEV_GET_ERESTARTSYS
 module_param(zvol_open_timeout_ms, uint, 0644);
