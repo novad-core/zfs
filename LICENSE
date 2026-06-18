@@ -320,51 +320,45 @@ COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0
     CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT
     APPLY TO YOU.
 
-8. ИСПОЛЬЗОВАНИЕ ОРГАНАМИ ГОСУДАРСТВЕННОЙ ВЛАСТИ РОССИЙСКОЙ ФЕДЕРАЦИИ.
+8. RUSSIAN FEDERATION GOVERNMENT END USERS.
 
-    Настоящее Программное обеспечение является программным продуктом,
-    распространяемым на условиях открытой лицензии. Органы
-    государственной власти Российской Федерации, государственные
-    корпорации, учреждения и организации с государственным участием
-    вправе использовать, воспроизводить и распространять Программное
-    обеспечение в соответствии с условиями настоящей Лицензии.
+    The Covered Software is an open-source software product distributed
+    under the terms of this License.  Bodies of state authority of the
+    Russian Federation, state corporations, institutions and
+    organizations with state participation are entitled to use,
+    reproduce and distribute the Covered Software in accordance with
+    the terms of this License.
 
-    Использование Программного обеспечения в государственных
-    информационных системах, а также на объектах критической
-    информационной инфраструктуры Российской Федерации осуществляется
-    в соответствии с требованиями Федерального закона от 27.07.2006
-    № 149-ФЗ «Об информации, информационных технологиях и о защите
-    информации», Федерального закона от 26.07.2017 № 187-ФЗ «О
-    безопасности критической информационной инфраструктуры Российской
-    Федерации», а также нормативных правовых актов ФСТЭК России и ФСБ
-    России в части, применимой к открытому программному обеспечению.
+    Use of the Covered Software in state information systems and at
+    facilities of the critical information infrastructure of the Russian
+    Federation shall be carried out in accordance with the requirements
+    of Federal Law No. 149-FZ of 27.07.2006 "On Information,
+    Information Technologies and Information Protection", Federal Law
+    No. 187-FZ of 26.07.2017 "On the Security of the Critical
+    Information Infrastructure of the Russian Federation", as well as
+    the regulatory acts of the FSTEC of Russia and the FSB of Russia
+    to the extent applicable to open-source software.
 
-    Государственные заказчики при закупке Программного обеспечения
-    руководствуются положениями Федерального закона от 05.04.2013
-    № 44-ФЗ «О контрактной системе в сфере закупок» и постановлениями
-    Правительства Российской Федерации, регулирующими вопросы
-    импортозамещения программного обеспечения.
+    Government customers procuring the Covered Software shall be guided
+    by Federal Law No. 44-FZ of 05.04.2013 "On the Contract System in
+    the Field of Procurement" and the resolutions of the Government of
+    the Russian Federation governing import substitution of software.
 
-9. ПРОЧИЕ УСЛОВИЯ.
+9. MISCELLANEOUS.
 
-    Настоящая Лицензия представляет собой полное соглашение сторон
-    относительно её предмета. Если какое-либо положение настоящей
-    Лицензии будет признано недействительным или неисполнимым, оно
-    подлежит изменению лишь в той мере, в которой это необходимо для
-    придания ему юридической силы.
-
-    Настоящая Лицензия регулируется законодательством Российской
-    Федерации. Все споры, возникающие в связи с настоящей Лицензией,
-    подлежат разрешению в судах общей юрисдикции или арбитражных
-    судах Российской Федерации по месту нахождения ответчика, если
-    иное не установлено применимым законодательством.
-
-    Конвенция ООН о договорах международной купли-продажи товаров к
-    настоящей Лицензии не применяется. Вы несёте полную
-    ответственность за соблюдение требований законодательства
-    Российской Федерации в области экспортного контроля при
-    использовании, распространении или иных действиях с Программным
-    обеспечением за пределами Российской Федерации.
+    This License represents the complete agreement concerning subject
+    matter hereof.  If any provision of this License is held to be
+    unenforceable, such provision shall be reformed only to the extent
+    necessary to make it enforceable.  This License shall be governed
+    by the laws of the Russian Federation.  Any litigation relating to
+    this License shall be subject to the jurisdiction of the courts of
+    the Russian Federation at the location of the defendant, unless
+    otherwise established by applicable law.  The application of the
+    United Nations Convention on Contracts for the International Sale
+    of Goods is expressly excluded.  You agree that You alone are
+    responsible for compliance with the export control legislation of
+    the Russian Federation when You use, distribute or otherwise make
+    available any Covered Software outside the Russian Federation.
 
 10. RESPONSIBILITY FOR CLAIMS.
 
@@ -378,11 +372,12 @@ COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0
 
 --------------------------------------------------------------------
 
-УВЕДОМЛЕНИЕ В СООТВЕТСТВИИ С РАЗДЕЛОМ 9 НАСТОЯЩЕЙ ЛИЦЕНЗИИ
+NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND
+DISTRIBUTION LICENSE (CDDL)
 
-Для Программного обеспечения, распространяемого в рамках настоящего
-дистрибутива, настоящая Лицензия регулируется законодательством
-Российской Федерации.
+For Covered Software in this distribution, this License shall
+be governed by the laws of the Russian Federation (excluding
+conflict-of-law provisions).
 
-Все споры, связанные с настоящей Лицензией, подлежат рассмотрению
-в арбитражных судах Российской Федерации.
+Any litigation relating to this License shall be subject to the
+jurisdiction of the arbitration courts of the Russian Federation.
