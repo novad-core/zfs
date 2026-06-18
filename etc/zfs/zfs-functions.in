@@ -11,6 +11,30 @@
 
 PATH=/sbin:/bin:/usr/bin:/usr/sbin
 
+# Write a structured JSON log entry for SIEM integration.
+# Usage: zfs_log_structured <severity> <component> <message>
+zfs_log_structured()
+{
+	local severity="$1"
+	local component="$2"
+	local message="$3"
+	local logfile="${ZFS_AUDIT_LOG:-/var/log/zfs/audit.log}"
+	local logdir
+
+	[ -z "${ZFS_AUDIT_LOG}" ] && return 0
+
+	logdir="$(dirname "${logfile}")"
+	[ -d "${logdir}" ] || mkdir -p "${logdir}" 2>/dev/null || return 1
+
+	printf '{"ts":"%s","host":"%s","severity":"%s","component":"%s","msg":"%s"}\n' \
+		"$(date -u +"%Y-%m-%dT%H:%M:%SZ")" \
+		"$(hostname -f 2>/dev/null || hostname)" \
+		"${severity}" \
+		"${component}" \
+		"${message}" \
+		>> "${logfile}" 2>/dev/null
+}
+
 # Source function library
 if [ -f /etc/rc.d/init.d/functions ]; then
 	# RedHat and derivatives
