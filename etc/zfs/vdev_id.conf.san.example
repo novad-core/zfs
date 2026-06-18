@@ -1,0 +1,37 @@
+#
+# Example vdev_id.conf for SAN-connected storage arrays
+# (Aquarius Server, DEPO Storm and similar Russian server platforms)
+#
+# This configuration uses WWN-based aliases for FC-connected LUNs
+# to provide stable device names independent of HBA port ordering.
+#
+# See vdev_id(8) for full documentation.
+#
+
+# Use WWN (World Wide Name) for stable SAN device identification
+alias pool-lun0  /dev/disk/by-id/wwn-0x50014ee0042aa5b1
+alias pool-lun1  /dev/disk/by-id/wwn-0x50014ee0042aa5b2
+alias pool-lun2  /dev/disk/by-id/wwn-0x50014ee0042aa5b3
+alias pool-lun3  /dev/disk/by-id/wwn-0x50014ee0042aa5b4
+alias pool-lun4  /dev/disk/by-id/wwn-0x50014ee0042aa5b5
+alias pool-lun5  /dev/disk/by-id/wwn-0x50014ee0042aa5b6
+
+# Spare LUNs
+alias pool-spare0 /dev/disk/by-id/wwn-0x50014ee0042aa5c1
+alias pool-spare1 /dev/disk/by-id/wwn-0x50014ee0042aa5c2
+
+#
+# Example for multipath SAN (with device-mapper multipath)
+# Uncomment if using dm-multipath
+#
+# multipath yes
+#
+# alias pool-lun0  /dev/disk/by-id/dm-uuid-mpath-360014ee0042aa5b1
+# alias pool-lun1  /dev/disk/by-id/dm-uuid-mpath-360014ee0042aa5b2
+
+#
+# Example zpool create using these aliases:
+#
+# zpool create datapool \
+#     raidz2 pool-lun0 pool-lun1 pool-lun2 pool-lun3 pool-lun4 pool-lun5 \
+#     spare  pool-spare0 pool-spare1
