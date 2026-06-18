@@ -1,0 +1,12 @@
+[Unit]
+Description=ZFS health check for pool %i
+Documentation=man:zpool-status(8)
+Requires=zfs.target
+After=zfs.target
+ConditionPathIsDirectory=/sys/module/zfs
+
+[Service]
+Type=oneshot
+EnvironmentFile=-@initconfdir@/zfs
+ExecStart=@scriptdir@/zfs-health-report.sh --pool %i --json
+StandardOutput=append:/var/log/zfs/health.log

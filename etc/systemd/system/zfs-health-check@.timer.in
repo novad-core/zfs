@@ -1,0 +1,14 @@
+[Unit]
+Description=Periodic ZFS health check for pool %i
+Documentation=man:zpool-status(8)
+Requires=zfs.target
+After=zfs.target
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=5min
+RandomizedDelaySec=30
+Persistent=true
+
+[Install]
+WantedBy=timers.target
