@@ -1,0 +1,34 @@
+#
+# Example vdev_id.conf for NVMe drives
+#
+# NVMe devices can be identified by their unique EUI-64 or UUID identifiers
+# for stable naming independent of slot/controller enumeration order.
+#
+# See vdev_id(8) for full documentation.
+#
+
+# Alias NVMe drives by EUI-64 identifier (preferred — survives reboots and
+# PCIe slot changes on platforms like Aquarius Server T50 D223CF)
+alias nvme-00  /dev/disk/by-id/nvme-eui.0025385b71b16d26
+alias nvme-01  /dev/disk/by-id/nvme-eui.0025385b71b16d27
+alias nvme-02  /dev/disk/by-id/nvme-eui.0025385b71b16d28
+alias nvme-03  /dev/disk/by-id/nvme-eui.0025385b71b16d29
+alias nvme-04  /dev/disk/by-id/nvme-eui.0025385b71b16d2a
+alias nvme-05  /dev/disk/by-id/nvme-eui.0025385b71b16d2b
+
+# Spare
+alias nvme-spare0  /dev/disk/by-id/nvme-eui.0025385b71b16d30
+
+#
+# Example: high-performance NVMe mirror pool
+#
+# zpool create fastpool \
+#     mirror nvme-00 nvme-01 \
+#     mirror nvme-02 nvme-03 \
+#     mirror nvme-04 nvme-05 \
+#     spare  nvme-spare0
+#
+# Example: NVMe RAID-Z2 pool
+#
+# zpool create datapool \
+#     raidz2 nvme-00 nvme-01 nvme-02 nvme-03 nvme-04 nvme-05
